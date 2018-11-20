@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS
-from .views import RetrieveArticles
+from views import RetrieveArticles
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 api = Api(app)
